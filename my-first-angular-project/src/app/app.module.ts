@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 
 
 import { AppComponent } from './app.component';
@@ -12,7 +13,8 @@ import { ButtonsModule } from '@progress/kendo-angular-buttons';
   ],
   imports: [
     BrowserModule,
-    ButtonsModule
+    ButtonsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
